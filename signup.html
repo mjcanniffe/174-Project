@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+
+</style>
+</head>
+<body>
+<div class = "main">
+  <div class="navbar">
+    <a href="#home">My Team</a>
+    <a href="teamProgress.html">Progress</a>
+    <a href="#contact">Leaderboard</a>
+  </div>
+
+  <form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <br>
+
+      
+
+      <div class="clearfix">
+        <button type="button" class="cancelbtn"><a href="login.html">Cancel</button>
+        <button type="submit" class="signupbtn"> <a href="joinTeam.html">Sign Up</button>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+</body>
+</html>
+

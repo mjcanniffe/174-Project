@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+
+
+</style>
+</head>
+<body>
+
+<div class = "main">
+	<div class="navbar">
+	  <a href="#home">My Team</a>
+	  <a href="teamProgress.html">Progress</a>
+	  <a href="#contact">Leaderboard</a>
+	</div>
+
+
+	<h1>Join a team</h1>
+	<p>Don't want to join a team?<a href ="createTeam.html">  Click here to create your own </p>
+
+	<ul id="myUL">
+	  <li><a href="teamProgress.html">Team 1</a></li>
+	  <li><a href="teamProgress.html">Team 2</a></li>
+	  <li><a href="teamProgress.html">Team 3</a></li>
+	  <li><a href="teamProgress.html">Squad 1</a></li>
+	  <li><a href="teamProgress.html">Squad 2</a></li>
+	  <li><a href="#">Group 1</a></li>
+	  <li><a href="#">Group 2</a></li>
+	</ul>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+
+

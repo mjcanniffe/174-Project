@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<style>
+#teamProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.progress {
+  width: 30%;
+  height: 30px;
+  background-color: #4CAF50;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+
+</style>
+<body>
+<div class = "main">
+  <div class="navbar">
+    <a href="joinTeam.html">My Team</a>
+    <a href="teamProgress.html">Progress</a>
+    <a href="#contact">Leaderboard</a>
+  </div>
+
+  <h1>Your teams Progress</h1>
+
+  <div id="teamProgress">
+    <h2>Running</h2>
+    <div id="teamRunning" class = "progress"></div>
+    <button>Input Progress</button>
+    <h2>Biking</h2>
+    <div id="teamBiking" class = "progress"></div>
+    <button>Input Progress</button>
+
+    <h2>Swimming</h2>
+    <div id="teamSwimming" class = "progress"></div>
+    <button>Input Progress</button>
+
+  </div>
+
+  <br>
+ </div>
+
+</body>
+</html>
+
