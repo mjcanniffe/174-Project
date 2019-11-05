@@ -11,7 +11,7 @@ class TeamForm(forms.Form):
 	team_name = forms.CharField(label='Enter team name', max_length=50)
 
 #join team
-	
+
 	
 #submit team progress
 class ProgressForm(forms.Form):
