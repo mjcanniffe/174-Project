@@ -2,10 +2,10 @@ from polls.models import Team, User, Progress
 
 #create account
 user_email=""
-hashed_pass=""
+user_pass=""
 user_name=""
 
-new_account = User(email=user_email, hashed_password=hashed_pass, name=user_name)
+new_account = User(email=user_email, password=user_pass, name=user_name)
 new_account.save()
 
 #create team
@@ -40,9 +40,9 @@ delta_activity_2 = ""
 delta_activity_3 = ""
 
 team = Team.objects.filter(team=team_id)
-team.activity_1_prog=team.delta_activity_1+delta_activity_1
-team.activity_2_prog=team.delta_activity_2+delta_activity_2
-team.activity_3_prog=team.delta_activity_3+delta_activity_3
+team.activity_1_prog=team.activity_1_prog+delta_activity_1
+team.activity_2_prog=team.activity_2_prog+delta_activity_2
+team.activity_3_prog=team.activity_3_prog+delta_activity_3
 
 team.save()
 

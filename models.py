@@ -10,15 +10,15 @@ class Team(models.Model):
 
 	def __str__(self):
 		return self.team_name
-	def is_full_team(self):
+	def is_team_full(self):
 		return strlen(self.member_2)>0 and strlen(self.member_3)>0
 
 class User(models.Model):
 	# auto-gen id is primary key (?)
 	email = models.CharField(primary_key=True, max_length=50)
 	password = models.CharField(max_length=50)
+	name = models.CharField(max_length=50)
 	team = models.CharField(max_length=50, blank=True)
-	#name = models.CharField(max_length=50)
 	#team_id = models.int() #need more parameters?
 
 	def __str__(self):
