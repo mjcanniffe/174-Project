@@ -10,6 +10,8 @@ class Team(models.Model):
 
 	def __str__(self):
 		return self.team_name
+	def is_full_team(self):
+		return strlen(self.member_2)>0 and strlen(self.member_3)>0
 
 class User(models.Model):
 	# auto-gen id is primary key (?)
@@ -21,6 +23,8 @@ class User(models.Model):
 
 	def __str__(self):
 		return self.email
+	def give_team(self):
+		return self.team
 
 class Progress(models.Model):
 	team = models.ForeignKey(Team, on_delete=models.SET_NULL, blank=True)
@@ -30,3 +34,9 @@ class Progress(models.Model):
 
 	def __str__(self):
 		return self.team
+	def give_prog_1(self):
+		return self.activity_1_prog
+	def give_prog_2(self):
+		return self.activity_2_prog
+	def give_prog_3(self):
+		return self.activity_3_prog
